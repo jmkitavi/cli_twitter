@@ -29,19 +29,19 @@ if len(sys.argv) > 3:
     third = str(sys.argv[3])
 
 if first == "timeline":
-    if second and second.isdigit() is True:
-        count = int(second)
+	if second and second.isdigit() is True:
+		count = int(second)
+	if second.isdigit() is True or second == "":		
+		for x in t.statuses.home_timeline(count=count):
+			print(x['user']['screen_name'] + ":  :" + x['text'])
 
-        for x in t.statuses.home_timeline(count=count):
-            print(x['user']['screen_name'] + ":  :" + x['text'])
-
-    if second:
-        count = 10
-        if third and third.isdigit() is True:
-            count = int(third)
-
-            for x in t.statuses.user_timeline(screen_name=second, count=count):
-                print(x['user']['screen_name'] + ":  :" + x['text'])
+	if second and second!="":
+		if third and third.isdigit() is True:
+			count = int(third)
+		if third.isdigit() is True or third == "":		
+			for x in t.statuses.user_timeline(screen_name=second, count=count):
+				print(x['user']['screen_name'] + ":  :" + x['text'])
+				
 
 # 	t.statuses.update(status=sys.argv[1])
 # # for x in t.statuses.home_timeline(count=1):
