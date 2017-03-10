@@ -41,6 +41,8 @@ if first == "timeline":
         if third.isdigit() is True or third == "":
             for x in t.statuses.user_timeline(screen_name=second, count=count):
                 print(x['user']['screen_name'] + ":  :" + x['text'])
+elif first == "user":
+	print(t.screen_name)
 
 elif len(sys.argv) ==2 and first != "timeline":
 	t.statuses.update(status=sys.argv[1])
