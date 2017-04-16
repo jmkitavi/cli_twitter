@@ -4,10 +4,10 @@ import sys
 import json
 
 # new app kit Africa Security
-consumer_key= 'Q8JAqDHNfIh7cAK0Q7VGQXh1p'
-consumer_secret = 'aTu7agaQDEvQls3MCHGONR9R3U1UnSzvq1BxDulUG2fOr1ckqo'
-token = '833663699764256768-86z6wYa96UdEJK5mVVtY7Rv6thrPOZt'
-token_secret = 'BTWoRhPrMPnLg3WkA79EHqWG10XRWayZx2WKOstgN36cw'
+consumer_key= ''
+consumer_secret = ''
+token = ''
+token_secret = ''
 
 # cli kitavi Africa Security
 # consumer_key = "ocFrr3g3h2UVvRXuzGnkK0Etc"
