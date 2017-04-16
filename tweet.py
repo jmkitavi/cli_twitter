@@ -9,11 +9,6 @@ consumer_secret = ''
 token = ''
 token_secret = ''
 
-# cli kitavi Africa Security
-# consumer_key = "ocFrr3g3h2UVvRXuzGnkK0Etc"
-# consumer_secret = "Uxd7WigHJXVbT15CXUGRtSWS9vxGVFCjbjBvgHwvJ71Ozys6j7"
-# token = "833663699764256768-gGfV2HXaZ81z0YVvB3TwFRflBH4oBXQ"
-# token_secret = "K3MvLn5erxhZu5w1ZcvjInj1MJQUmF9FaNBrbG0TiR75e"
 
 t = Twitter(auth=OAuth(token, token_secret, consumer_key, consumer_secret))
 
